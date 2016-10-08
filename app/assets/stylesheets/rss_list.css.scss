@@ -1,0 +1,69 @@
+.rss {
+  margin-bottom: 20px;
+}
+
+.rss-title {
+  height: 30px;
+  background-color: #d3d3d3;
+  -webkit-border-top-left-radius: 3px;  
+  -webkit-border-top-right-radius: 3px;  
+  -moz-border-radius-topleft: 3px;  
+  -moz-border-radius-topright: 3px;  
+  border-bottom-style: groove;
+}
+
+.rss-title a {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #444;
+  padding-left: 5px;
+}
+
+.rss_list {
+  -webkit-border-bottom-right-radius: 3px;  
+  -webkit-border-bottom-left-radius: 3px;  
+  -moz-border-radius-bottomright: 3px;  
+  -moz-border-radius-bottomleft: 3px;  
+  background-color: #F5F5F5;
+}
+
+.article {
+  border-bottom-style: groove;
+  padding: 5px;
+  height: 28px;
+}
+
+.article img {
+  height: 18px;
+  vertical-align: middle;
+}
+
+.article a {
+  display: block;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  line-height: 28px;
+}
+
+.article-description {
+  display: inline-flex;
+  width: 90%;
+}
+
+.article-title {
+  display: inline-block;
+  width: 20px;
+  height: 100%;
+}
+
+#rss-matome {
+  background-color: #AFEEEE;
+}
+
+#rss-game {
+  background-color: #98FB98;
+}

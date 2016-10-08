@@ -1,0 +1,13 @@
+<div class="rss">
+  <div id="rss-matome" class="rss-title">
+    <a><%=@category_name%> : 最新記事</a>
+  </div>
+  <div class="rss_list">
+    <%- @articles.each do |article|  -%>
+      <div class="article">
+        <div class="article-title"><img src="/images/title-icon.png"></div>
+        <div class="article-description"><a href="<%=article["url"]%>"><%= article["title"] %></a></div>
+      </div>
+    <%- end -%>
+  </div>
+</div>

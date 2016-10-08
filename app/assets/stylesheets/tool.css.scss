@@ -1,0 +1,54 @@
+.icon-animation {
+  height: 60px;
+  display: block;
+  background: rgba(255, 255, 255, 0.02);
+position: relative; }
+.icon-animation span {
+  width: 30px;
+  height: 1px;
+  display: block;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+margin-left: -15px; }
+
+.type-2 span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+transform: rotate(0deg); }
+
+.type-2 .top {
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+transform: translateY(-10px); }
+
+.type-2 .bottom {
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+transform: translateY(10px); }
+
+.type-2:hover .top {
+  -webkit-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+transform: translateY(-13px); }
+
+.type-2:hover .bottom {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+transform: translateY(13px); }
+
+.type-2.is-open .middle {
+background: rgba(255, 255, 255, 0); }
+
+.type-2.is-open .top {
+  -webkit-transform: rotate(-45deg) translateY(0px);
+  -ms-transform: rotate(-45deg) translateY(0px);
+transform: rotate(-45deg) translateY(0px); }
+
+.type-2.is-open .bottom {
+  -webkit-transform: rotate(45deg) translateY(0px);
+  -ms-transform: rotate(45deg) translateY(0px);
+transform: rotate(45deg) translateY(0px); }

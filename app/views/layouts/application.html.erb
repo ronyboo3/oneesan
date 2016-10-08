@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Oneesan</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title>BOTTOWN</title>
+
+  <meta name="viewport" content="width=device-width,user-scalable=0">
+
+  <%#あとで消す %>
+  <META NAME="robots" CONTENT="none">
+
+  <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84800065-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/javascripts/flickity.pkgd.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/flickity.min.css" media="screen">
+
 </head>
 <body>
 
+<%= render partial: '/layouts/navbar' %>
+
 <%= yield %>
+
+  <script type="text/javascript" charset="utf-8">
+    var $carousel = $('.main-carousel').flickity({
+      // options
+      contain: true,
+      wrapAround: true,
+      autoPlay: true
+    });
+
+    $(function() {
+      $carousel.flickity('reloadCells');
+    });
+  </script>
+
+  <div class="copyright">
+    <a>Copyright (C) BOTTOWN All Rights Reserved.</a>
+  </div>
 
 </body>
 </html>

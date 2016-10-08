@@ -1,0 +1,28 @@
+.navbar {
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  height: 60px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.logo a {
+  font-size: 8px;
+  position: absolute;
+  left: 15px;
+  top: 53px;
+  color: #444;
+}
+
+.tool {
+  width: 50px;
+  display: inline-block;
+  position: absolute;
+  right: 5%;
+}

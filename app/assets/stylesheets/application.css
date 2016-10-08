@@ -12,4 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require ./tool
+ *= require ./rss_list
+ *= require ./index
+ *= require ./slider
  */
