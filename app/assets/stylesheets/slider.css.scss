@@ -1,3 +1,30 @@
+.main-carousel {
+  margin-bottom: 10px;
+}
+
 .carousel-cell {
   height: 200px;
+  width: 100%;
+}
+
+.carousel-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+.carousel-content div {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  height: 30%;
+}
+
+.carousel-content div a {
+  text-decoration: none;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
 }

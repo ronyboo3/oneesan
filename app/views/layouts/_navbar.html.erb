@@ -1,13 +1,13 @@
 <div class="navbar">
-  <div class="logo">
-    <img src="/images/logo.png" alt="ロゴ">
-    <a>まとめのまとめサイト</a>
+  <div class="logo" onclick="location.href='/';">
+      <img src="/images/logo.png" alt="BOTTOWN">
+      <a><%= @category_name == "アダルト" ? @category_name : "まとめのまとめサイト" %></a>
   </div>
-  <div class="tool">
+  <!--<div class="tool">
     <div  class="icon-animation type-2">
       <span class="top"></span>
       <span class="middle"></span>
       <span class="bottom"></span>
     </div>
-  </div>
+  </div>-->
 </div>

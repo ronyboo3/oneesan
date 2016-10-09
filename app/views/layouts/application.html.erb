@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BOTTOWN</title>
+  <title>BOTTOWN ~まとめのまとめサイト~</title>
+  <%= favicon_link_tag() %>
 
   <meta name="viewport" content="width=device-width,user-scalable=0">
-
-  <%#あとで消す %>
-  <META NAME="robots" CONTENT="none">
+  <meta name="description" content="BOTTOWN ~まとめのまとめサイト~ は2chまとめサイトの最新記事をまとめるサイトです。">
+  <meta name="keywords" content="まとめ,2ch,ゲーム,エンタメ,ガジェット,最新記事,怖い話,洒落恐">
 
   <%= stylesheet_link_tag 'application' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 
   <script>
@@ -23,10 +24,6 @@
 
   </script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="/javascripts/flickity.pkgd.min.js"></script>
-  <link rel="stylesheet" href="/stylesheets/flickity.min.css" media="screen">
-
 </head>
 <body>
 
@@ -34,16 +31,14 @@
 
 <%= yield %>
 
+  <link rel="stylesheet" href="/stylesheets/flickity.min.css" media="screen">
+  <script src="/javascripts/flickity.pkgd.min.js"></script>
   <script type="text/javascript" charset="utf-8">
     var $carousel = $('.main-carousel').flickity({
       // options
       contain: true,
       wrapAround: true,
-      autoPlay: true
-    });
-
-    $(function() {
-      $carousel.flickity('reloadCells');
+      autoPlay: 5000
     });
   </script>
 

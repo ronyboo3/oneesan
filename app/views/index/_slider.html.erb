@@ -1,5 +1,14 @@
 <div class="main-carousel" style="margin-top:5px;">
-  <div class="carousel-cell"><img src="/images/monst.jpg" style="height:200px;"></div>
-  <div class="carousel-cell"><a href="https://itunes.apple.com/jp/app/pokemon-go/id1094591345?mt=8&at=ne5JoJIY&ct=pokemongo_slider"><img src="/images/pokemongo.jpg" style="height:200px;"></a></div>
-  <div class="carousel-cell"><img src="/images/pazudora.jpg" style="height:200px;"></div>
+  <%- @pickup_articles.each_with_index do |article, i|  -%>
+    <div class="carousel-cell">
+      <div class="carousel-content" onclick="window.open('<%=article["url"]%>', '_blank');" style="background-image: url('<%=article["img"]%>');">
+        <div>
+        <a>
+          <%=article["title"]%>
+        </a>
+        </div>
+      </div>
+    </div>
+    <%- break if i == 4 -%>
+  <%- end -%>
 </div>
