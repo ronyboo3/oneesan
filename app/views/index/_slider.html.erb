@@ -1,7 +1,7 @@
 <div class="main-carousel" style="margin-top:5px;">
   <%- @pickup_articles.each_with_index do |article, i|  -%>
     <div class="carousel-cell">
-      <div class="carousel-content" onclick="window.open('<%=article["url"]%>', '_blank');" style="background-image: url('<%=article["img"]%>');">
+      <div class="carousel-content" onclick="ga('send', 'event', 'sliderClick', 'click');window.open('<%=article["url"]%>', '_blank');" style="background-image: url('<%=article["img"]%>');">
         <div>
         <a>
           <%=article["title"]%>
