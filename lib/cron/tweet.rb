@@ -11,7 +11,11 @@ message = "ねぇねぇ、さっき聞いた話なんだけど・・・\n\n"
 make_data_from_rss = MakeDataFromRss.new("omoshiro")
 articles = make_data_from_rss.articles
 
-message += "「#{articles[0]["title"]}」\n\n"
+title = articles[0]["title"]
+if title.length > 40
+  title = title[0, 40]
+end
+message += "「#{title}」\n\n"
 message += "これ今話題の記事なんだって！\n\n"
 
 message += "詳しくはこちら\n"
