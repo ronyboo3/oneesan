@@ -16,7 +16,7 @@ message += "これ今話題の記事なんだって！\n\n"
 
 message += "詳しくはこちら\n"
 message += "http://bot-jp.com\n\n"
-message += "#噂のお姉さん"
+message += "#噂のお姉さん #まとめ #2ch"
 
 client = Twitter::REST::Client.new(config)
 
