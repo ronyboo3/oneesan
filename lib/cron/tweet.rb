@@ -13,7 +13,7 @@ articles = make_data_from_rss.articles
 
 title = articles[0]["title"]
 if title.length > 40
-  title = title[0, 40]
+  title = title[0, 40] + "…"
 end
 message += "「#{title}」\n\n"
 message += "これ今話題の記事なんだって！\n\n"
