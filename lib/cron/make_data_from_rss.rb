@@ -41,7 +41,7 @@ class MakeDataFromRss
     feed_urls = Feedbag.find self.feed_url
     feed = Feedjira::Feed.fetch_and_parse(feed_urls.first)
     built_data = build_data(feed.entries)
-    p built_data
+    p feed
     out_to_json(built_data)
   end
 
@@ -52,10 +52,19 @@ class MakeDataFromRss
       child[:title] = article.title
       child[:url] = article.url
       if article.image == nil
-        child[:img] = image_path(article.summary)
+        if self.category == "pickup_adult"
+          child[:img] = image_path(article.summary)
+        else
+          content = article.content
+          if content != nil
+            content = content.split("img")[1]
+            child[:img] = image_path(content)
+          end
+        end
       else
         child[:img] = article.image
       end
+      p child[:img]
       child[:published_at] = article.published
       built_data.push(child)
       break if i == 15

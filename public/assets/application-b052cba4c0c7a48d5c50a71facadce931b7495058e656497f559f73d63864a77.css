@@ -157,6 +157,12 @@
   text-align: center;
   background-color: #ddd;
 }
+
+/* line 8, /usr/local/var/oneesan/app/assets/stylesheets/index.css.scss */
+h1 {
+  font-size: 12px;
+  color: #444;
+}
 /* line 1, /usr/local/var/oneesan/app/assets/stylesheets/navbar.scss */
 .navbar {
   border-bottom: 1px;
@@ -228,58 +234,63 @@
 .article {
   border-bottom-style: groove;
   padding: 5px;
-  height: 28px;
+  height: 58px;
+  display: table;
+  width: 98%;
 }
 
-/* line 37, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 39, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article img {
-  height: 18px;
   vertical-align: middle;
+  height: auto;
+  width: auto;
+  max-height: 58px;
+  max-width: 58px;
 }
 
-/* line 42, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 47, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article a {
-  display: block;
   font-size: 14px;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-decoration: none;
-  line-height: 28px;
 }
 
-/* line 52, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 54, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article-description {
-  display: inline-flex;
-  width: 90%;
+  display: table-cell;
+  width: 77%;
+  padding-left: 5px;
 }
 
-/* line 57, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 60, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article-title {
-  display: inline-block;
-  width: 20px;
+  display: table-cell;
+  width: 58px;
+  text-align: center;
   height: 100%;
+  vertical-align: middle;
+  background-color: #DDD;
 }
 /* line 1, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
 .main-carousel {
   margin-bottom: 10px;
-  display: none;
 }
 
-/* line 6, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
+/* line 5, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
 .carousel-cell {
   height: 200px;
   width: 100%;
 }
 
-/* line 11, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
+/* line 10, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
 .carousel-content {
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
 }
 
-/* line 17, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
+/* line 16, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
 .carousel-content div {
   position: fixed;
   bottom: 0;
@@ -288,7 +299,7 @@
   height: 30%;
 }
 
-/* line 25, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
+/* line 24, /usr/local/var/oneesan/app/assets/stylesheets/slider.css.scss */
 .carousel-content div a {
   text-decoration: none;
   width: 95%;

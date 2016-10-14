@@ -5,7 +5,7 @@
   <div class="rss_list">
     <%- @articles.each do |article|  -%>
       <div class="article">
-        <div class="article-title"><img src="/images/title-icon.png"></div>
+        <div class="article-title"><img src="<%=article["img"] == nil ? "/images/logo.png" : article["img"]%>"></div>
         <div class="article-description"><a href="<%=article["url"]%>" target="_blank" onclick="ga('send', 'event', 'rss_list_<%=@category_name%>', 'click');"><%= article["title"] %></a></div>
       </div>
     <%- end -%>

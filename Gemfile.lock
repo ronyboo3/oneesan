@@ -204,6 +204,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   feedbag
   feedjira
+  i18n
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks

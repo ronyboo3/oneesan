@@ -157,6 +157,12 @@
   text-align: center;
   background-color: #ddd;
 }
+
+/* line 8, /usr/local/var/oneesan/app/assets/stylesheets/index.css.scss */
+h1 {
+  font-size: 12px;
+  color: #444;
+}
 /* line 1, /usr/local/var/oneesan/app/assets/stylesheets/navbar.scss */
 .navbar {
   border-bottom: 1px;
@@ -192,10 +198,11 @@
 }
 /* line 1, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .rss {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-/* line 5, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 6, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .rss-title {
   height: 30px;
   -webkit-border-top-left-radius: 3px;
@@ -205,7 +212,7 @@
   border-bottom-style: groove;
 }
 
-/* line 14, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 15, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .rss-title a {
   font-size: 16px;
   line-height: 30px;
@@ -214,7 +221,7 @@
   padding-left: 5px;
 }
 
-/* line 22, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 23, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .rss_list {
   -webkit-border-bottom-right-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -223,20 +230,20 @@
   background-color: #F5F5F5;
 }
 
-/* line 30, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 31, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article {
   border-bottom-style: groove;
   padding: 5px;
   height: 28px;
 }
 
-/* line 36, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 37, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article img {
   height: 18px;
   vertical-align: middle;
 }
 
-/* line 41, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 42, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article a {
   display: block;
   font-size: 14px;
@@ -247,13 +254,13 @@
   line-height: 28px;
 }
 
-/* line 51, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 52, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article-description {
   display: inline-flex;
   width: 90%;
 }
 
-/* line 56, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
+/* line 57, /usr/local/var/oneesan/app/assets/stylesheets/rss_list.css.scss */
 .article-title {
   display: inline-block;
   width: 20px;

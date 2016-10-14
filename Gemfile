@@ -26,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'feedjira'
 gem 'feedbag'
 
+gem 'i18n'
+
 gem 'jquery-turbolinks'
 
 gem 'nokogiri'

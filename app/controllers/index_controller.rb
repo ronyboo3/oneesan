@@ -3,6 +3,7 @@ class IndexController < ApplicationController
 
   def index
     setParams(params[:category])
+    @page_name = "index"
   end
   
   def adult
@@ -10,6 +11,7 @@ class IndexController < ApplicationController
     mdfr_pickup = MakeDataFromRss.new("pickup_adult")
     @pickup_articles = mdfr_pickup.articles
     addAd()
+    @page_name = "adult"
   end
 
   private
