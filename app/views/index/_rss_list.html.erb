@@ -7,6 +7,7 @@
       <div class="article">
         <div class="article-title"><img src="<%=article["img"] == nil ? "/images/logo.png" : article["img"]%>"></div>
         <div class="article-description"><a href="<%=article["url"]%>" target="_blank" onclick="ga('send', 'event', 'rss_list_<%=@category_name%>', 'click');"><%= article["title"] %></a></div>
+        <div class="article-published"><%= article["published_at"] %></div>
       </div>
     <%- end -%>
   </div>

@@ -65,7 +65,7 @@ class MakeDataFromRss
         child[:img] = article.image
       end
       p child[:img]
-      child[:published_at] = article.published
+      child[:published_at] = article.published.strftime("%m/%d %H:%M")
       built_data.push(child)
       break if i == 15
       break if i == 5 && self.category == "adult" 

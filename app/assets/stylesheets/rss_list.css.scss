@@ -52,7 +52,6 @@
 }
 
 .article-description {
-  display: table-cell;
   width: 77%;
   padding-left: 5px;
 }
@@ -66,4 +65,8 @@
   background-color: #DDD;
 }
 
-
+.article-published {
+  color: #aaa;
+  font-size: 10px;
+  text-align: right;
+}
