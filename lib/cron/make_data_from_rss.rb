@@ -49,7 +49,7 @@ class MakeDataFromRss
     built_data = []
     data.each_with_index do |article, i|
       child = Hash.new
-      child[:title] = article.title
+      child[:title] = article.title.length < 50 ? article.title : article.title.slice(0, 47) + "・・・"
       child[:url] = article.url
       if article.image == nil
         if self.category == "pickup_adult"
@@ -58,7 +58,7 @@ class MakeDataFromRss
           content = article.content
           if content != nil
             content = content.split("img")[1]
-            child[:img] = image_path(content)
+            child[:img] = content == nil ? nil : image_path(content)
           end
         end
       else
